@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Listado Mascota</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div th:include="_nav.html"></div>
+	<div class="card">
+	
+	<div class="container mt-4">
+        <h2 class="display-4 text-center">Listado de Mascotas</h2>
+        <!-- Tu contenido aquí -->
+    </div>
+	<!--  
+	 <label for="tipoVendedor">Selecciona un tipo de vendedor:</label>
+    <select id="tipoVendedor" name="tipoVendedor">
+        <option th:each="tipo : ${tiposVendedores}" th:text="${tipo}"></option>
+    </select>
+    -->
+
+	<table class="table">
+	<thead class="thead-dark">
+		<tr>
+		<th scope="col">Id mascota</th>
+		<th scope="col">Nombre</th>
+		<th scope="col">Raza</th>
+		<th scope="col">Fecha nacimiento</th>
+		<th scope="col">DNI Cliente</th>
+		<th scope="col">Observación</th>
+		<th scope="col"></th>
+		<th scope="col"></th>
+		</tr>
+	</thead>
+	<!-- for each variable, objeto coleccion que tiene las mascotas -->
+	<tbody th:each="mascota :${listadoMascota}">
+		
+		<tr>
+			<td th:text="${mascota.id_mascota}"/>
+			<td th:text="${mascota.nombre}"/>
+			<td th:text="${mascota.raza}"/>
+			<td th:text="${mascota.fecha_nacimiento}"/>
+			<td th:text="${mascota.dni_cliente}"/>	
+			<td th:text="${mascota.observacion}"/>
+			<td><a class="btn btn-primary" th:href="@{'/obtener?id_mascota='+${mascota.id_mascota}}">Editar</a>
+				<a class="btn btn-danger" th:href="@{'/eliminarMascota?id_mascota='+${mascota.id_mascota}}">Eliminar</a>
+			</td>
+		</tr>
+		
+	</tbody>
+	</table>
+	<div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="#" th:action="@{frmMascota}" method="get">
+                        <input type="submit" value="Nuevo Mascota" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <a class="btn btn-warning btn-block" th:href="@{/reportePDF/mascota}" target="_blank">Generar Reporte</a>
+                </div>
+            </div>
+        </div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VeterinarioForm</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+<div th:include="_nav.html"></div>
+
+<div class="container">
+  <form action="#" th:action="@{/veterinarioForm/ingresar}" th:object="${veterinario}" method="post">
+	  <div class="card">
+	    <h5 class="card-header">Registro de Veterinario</h5>
+	    <div class="card-body">
+	
+	      <table class="table table-striped">
+	        <tbody>
+<!-- 	          <tr>
+	            <th>ID Veterinario</th><input type="text" class="form-control"  th:field="*{idveterinario}" readonly>
+	          </tr> -->
+	          <tr><th>Nombres Veterinario</th><td><input type="text" class="form-control" th:field="*{nombresveterinario}"></td></tr>
+	          <tr><th>Apellidos Veterinario</th><td><input type="text" class="form-control" th:field="*{apellidosveterinario}"></td></tr>
+	          <tr><th>Años de Experiencia</th><td><input type="number" class="form-control" th:field="*{aniosexperiencia}"></td></tr>
+	          <tr><th>Teléfono</th><td><input type="text" class="form-control" th:field="*{telefono}"></td></tr>
+	          <tr><th>Correo Electrónico</th><td><input type="text" class="form-control" th:field="*{correo}"></td></tr>
+	          <tr><th>Número de Colegiatura</th><td><input type="number" class="form-control" th:field="*{nrocolegiatura}"></td></tr>
+	          <tr><th>Puesto</th><td><input type="text" class="form-control" th:field="*{puesto}"></td></tr>
+	        </tbody>
+	      </table>
+	    </div>
+	  </div>
+
+  	<br>
+		  <div class="card">
+		    <h5 class="card-header">Horarios</h5>
+		    <div class="card-body">
+		      <table class="table table-bordered">
+		        <thead>
+		          <tr>
+		            <th>ID Horario</th>
+		            <th>Dia</th>
+		            <th>Hora Inicio</th>
+		            <th>Hora Fin</th>
+		            <th><button type="button" class="btn btn-success" onclick="addEmptyRow()">Add Row</button></th>
+		          </tr>
+		        </thead>
+		        <tbody id="horariosTableBody">
+
+		            <tr th:each=" horario,itemStat : *{horarios}">
+<!-- 		          	<td><input type="text" class="form-control" th:field="*{horarios[__${itemStat.index}__].idhorario}" readonly></td> -->
+		            <td><input type="text" class="form-control" th:field="*{horarios[__${itemStat.index}__].dia}"></td>
+		            <td><input type="time" class="form-control" th:field="*{horarios[__${itemStat.index}__].horainicio}"></td>
+		            <td><input type="time" class="form-control" th:field="*{horarios[__${itemStat.index}__].horafin}"></td>
+		          	
+		          </tr>
+
+		        </tbody>
+		      </table>
+		    </div>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Grabar</button>
+      </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script>
+function addEmptyRow() {
+	var newIndex = $("#horariosTableBody tr").length; 
+    var newRow =
+        "<tr>" +
+/*         "<td><input type='text' class='form-control' readonly></td>" + */
+        "<td><input type='text' class='form-control' name='horarios[" + newIndex + "].dia'></td>" +
+        "<td><input type='time' class='form-control' name='horarios[" + newIndex + "].horainicio'></td>" +
+        "<td><input type='time' class='form-control' name='horarios[" + newIndex + "].horafin'></td>" +
+        "<td><button type='button' class='btn btn-danger' onclick='removeRow(this)'>Remove Row</button></td>" +
+        "</tr>";
+
+    $("#horariosTableBody").append(newRow);
+}
+
+function removeRow(button) {
+	$(button).closest('tr').remove();
+    $("#horariosTableBody tr").each(function (index, row) {
+        $(row).find("input").each(function () {
+            var oldName = $(this).attr("name");
+            var newName = oldName.replace(/\[\d+\]/, "[" + index + "]");
+            $(this).attr("name", newName);
+        });
+    });
+
+}
+</script>
+</body>
+</html>

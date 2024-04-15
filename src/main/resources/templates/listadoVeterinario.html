@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+<div th:include="_nav.html"></div>
+
+<div class="container md-2">
+<br>
+<h2 class="text-center">Mantenimiento de Veterinarios</h2>
+<br>
+	<form action="#" th:action="@{frmVeterinario}" method="get">
+		<input type="submit" value="Nuevo Veterinario" class="btn btn-primary nt-2">
+	</form>
+<table class="table table-striped table-bordered md-2">
+  <thead>
+    <tr>
+      <th>ID Veterinario</th>
+      <th>Nombres Veterinario</th>
+      <th>Apellidos Veterinario</th>
+      <th>Telefono</th>
+      <th>Correo electrónico</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="veterinario : ${listadoVeterinario}">
+      <td th:text="${veterinario.idveterinario}"></td>
+      <td th:text="${veterinario.nombresveterinario}"></td>
+      <td th:text="${veterinario.apellidosveterinario}"></td>
+      <td th:text="${veterinario.telefono}"></td>
+      <td th:text="${veterinario.correo}"></td>
+      <td><a class="btn btn-primary btn" th:href="@{'/veterinarioForm/obtener?idveterinario='+${veterinario.idveterinario}}">Editar</a>
+      <a class="btn btn-danger" th:href="@{'/veterinarioForm/eliminar?idveterinario='+${veterinario.idveterinario}}">Eliminar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</html>
