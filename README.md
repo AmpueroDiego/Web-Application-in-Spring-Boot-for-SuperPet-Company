@@ -14,12 +14,14 @@ This project allows SuperPet to migrate manual processes to automatic processes,
 ## CRUD for pets
 ![ListadoMascotas](https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/fd809fda-a6cf-410f-9302-46d8c28b5686)
 
-## Update veterinarian information
-![RecorteUpdateVeterinaria](https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/531eb8b6-0f9d-4975-b438-286539c67309)
+## Update pet information
+![RecorteUpdateVeterinaria](https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/708ffa86-8b31-48bd-9d1b-74c37c92cfe5)
 
-## Reports
+## Update veterinarian information
+![UpdateVeterinarios](https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/f76c702c-c958-43c5-95d5-6d8b6af8f64c)
+
+## Reports ready to donwload
 ![ListadoReportes](https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/55dbf156-57d2-46e9-9d4b-f998400c9f4f)
 
-## Update
-![UpdateVeterinarios](https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/f76c702c-c958-43c5-95d5-6d8b6af8f64c)
+
 
