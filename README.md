@@ -35,6 +35,9 @@
 ## - Design architecture presentation layer
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/b56530c6-cd26-406c-895d-aef9bf1384c4" alt="DesignArchitecture" width="800"/>
 
+![diagrama de clases de diseño_page-0001](https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/bd4c0923-1449-4a50-a6b0-873ae5f74eb4)
+
+
 ## - Sequence diagram
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/f6544c72-9c4d-4539-9a60-fa347cf2d0d6" alt="" width="800"/>
 
