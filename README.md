@@ -27,11 +27,10 @@
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/2d593372-a0d2-47c5-9ea1-59e18f88ee86" alt="UseCaseDiagram" width="800"/>
 
 ## - Flowcharts in Bizagi
-<img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/8dfa2f1c-62bb-4c80-89fe-086691af96ed" alt="Bizagi" width="800"/>
+<img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/444f8220-fe1a-43ef-a39c-813085b453df" alt="Flowchart" width="800"/>
 
-## - 1 of 5 Communication diagrams
+## - Communication diagram
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/9627eef8-6017-46eb-aeb9-c64259d18725" alt="CommunicationsDiagram" width="800"/>
-
 
 ## - Design architecture presentation layer
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/bd4c0923-1449-4a50-a6b0-873ae5f74eb4" alt="Design architecture" width="800"/>
