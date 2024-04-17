@@ -38,6 +38,9 @@
 ## - Sequence diagram
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/f6544c72-9c4d-4539-9a60-fa347cf2d0d6" alt="" width="800"/>
 
+## - JPA
+<img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/5c3fca98-46bb-4c43-b2ff-0028ef216a91" alt="jpa" width="800"/>
+
 
 <img src="" alt="" width="800"/>
 
