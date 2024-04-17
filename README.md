@@ -53,10 +53,11 @@
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/d190a624-5dd0-4718-8cfb-20ecaeec9de3" alt="Interface" width="800"/>
 
 
+## End Notes
+Although the main idea of the project is extensive, in this project we could only advance a demo, but we don't rule out continuing with the plans that will be developed.
+
+Thanks, I hope you enjoy the project! :)
 
 
-
-<img src="" alt="" width="800"/>
-
-
-
+## Licence:
+All the rights reserve by SuperPet
