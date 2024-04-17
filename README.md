@@ -38,8 +38,22 @@
 ## - Sequence diagram
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/f6544c72-9c4d-4539-9a60-fa347cf2d0d6" alt="" width="800"/>
 
+-> Some points:
+1. I use JPA(Java Persistence API) to map a Java class to a database table.
+2. I implemented a Spring MVC controller with CRUD operations to handle the request with the view and the class.
+3. I use interface for pet management service in a pet store, with CRUD and export reports to pdf methods.
+
 ## - JPA
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/5c3fca98-46bb-4c43-b2ff-0028ef216a91" alt="jpa" width="800"/>
+
+## - Controller
+<img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/f54b24cb-b283-47ae-8f3b-74ce6d980bd3" alt="controllerJava" width="800"/>
+
+## - Interface
+<img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/d190a624-5dd0-4718-8cfb-20ecaeec9de3" alt="Interface" width="800"/>
+
+
+
 
 
 <img src="" alt="" width="800"/>
