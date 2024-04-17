@@ -30,7 +30,8 @@
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/8dfa2f1c-62bb-4c80-89fe-086691af96ed" alt="Bizagi" width="800"/>
 
 ## - 1 of 5 Communication diagrams
-<img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/8f37233c-07b6-4b75-a9fc-ca239edc571b" alt="communicationsDiagram" width="800"/>
+<img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/9627eef8-6017-46eb-aeb9-c64259d18725" alt="CommunicationsDiagram" width="800"/>
+
 
 ## - Design architecture presentation layer
 <img src="https://github.com/AmpueroDiego/Web-Application-in-Spring-Boot-for-SuperPet-Company/assets/163020350/bd4c0923-1449-4a50-a6b0-873ae5f74eb4" alt="Design architecture" width="800"/>
@@ -40,5 +41,6 @@
 
 
 <img src="" alt="" width="800"/>
+
 
 
