@@ -2,7 +2,7 @@
 
 **(2023/11)** Acaemic Project based on Spring Boot Framework and RUP framework: Local website app for SuperPet (pet store looking to improve the processes of its recent veterinary) focus on CRUD for pets, veterinarians, clients and reports in pdf.
 
-- Software development: **Spring Boot(JPA) - MVC, in Eclipse IDE**
+- Software development: **Spring Boot(JPA) - MVC - Thymeleaf, in Eclipse IDE**
 - Database: **MySql**
 - Design and development of reports: **Jaspesoft Studio**
 - Sofware architecture design and business modeling: **IBM Rational Rhapsody, Bizagi**
